@@ -1,5 +1,5 @@
-#ifndef QDECPACKED_HH
-#define QDECPACKED_HH
+#ifndef QDECPACKED_H
+#define QDECPACKED_H
 
 /** \file QDecPacked.hh 
  * Declarations for the class QDecPacked.

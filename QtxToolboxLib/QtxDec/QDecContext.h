@@ -1,22 +1,36 @@
-#ifndef QDECCONTEXT_HH
-#define QDECCONTEXT_HH
+#ifndef QDECCONTEXT_H
+#define QDECCONTEXT_H
 
-/** \file QDecContext.hh 
- * Declarations for the class QDecContext.
+/**
+ * -----------------
+ * Class QDecContext
+ * -----------------
  *
- * (C) Copyright Semih Cemiloglu
- * All rights reserved, see COPYRIGHT file for details.
+ * Author  : R. Demers
+ * Version : 1.0.0
+ * License : LGPL V3 (See file LICENSE in root directory for details).
  *
- * $Id$
+ * DESCRIPTION
+ * -----------
+ * TODO
  *
+ * WARNING
+ * -------
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ * FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-
-extern "C" {
- #include "DecNumber/decContext.h"
+extern "C"
+{
+    #include "DecNumber/decContext.h"
 }
 #include "QDecFwd.h"
-
 
 // FORWARDS
 class QByteArray;
@@ -29,7 +43,6 @@ class QTextStream;
  * DEC_INIT_DECIMAL128
  */
 const int QDecContextDefKind = DEC_INIT_BASE;
-
 
 //! Maximum precision allowed in precision (digits) field
 const int32_t QDecMaxPrecision =  999999999;
@@ -63,7 +76,6 @@ class QDECIMAL_EXPORT QDecContext
   QDecContext(const decContext* cptr) : m_data(*cptr) {}
   QDecContext(const decContext& data) : m_data(data) {}
   // Default Copy Ctor and Dtor and Copy assignment are ok
-  
 
   // ACCESSORS
   //! Get decContext member
@@ -100,7 +112,6 @@ class QDECIMAL_EXPORT QDecContext
   //! Get trap-enabler flags of the context
   uint32_t traps() const
   { return m_data.traps; }
-
 
   // MODIFIERS
   //! Get decContext member

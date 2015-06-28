@@ -1,5 +1,5 @@
-#ifndef QDECQUAD_HH
-#define QDECQUAD_HH
+#ifndef QDECQUAD_H
+#define QDECQUAD_H
 
 /** \file QDecQuad.hh 
  * Declarations for the class QDecQuad.

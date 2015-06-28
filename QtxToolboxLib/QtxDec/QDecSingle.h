@@ -1,5 +1,5 @@
-#ifndef QDECSINGLE_HH
-#define QDECSINGLE_HH
+#ifndef QDECSINGLE_H
+#define QDECSINGLE_H
 
 /** \file QDecSingle.hh 
  * Declarations for the class QDecSingle.
