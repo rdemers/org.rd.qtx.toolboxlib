@@ -33,7 +33,7 @@
 #include "QDecFwd.h"
 #include "QDecContext.h"
 extern "C" {
- #include "DecNumber/decDouble.h"
+ #include "internal/DecNumber/decDouble.h"
 }
 
 // FORWARDS

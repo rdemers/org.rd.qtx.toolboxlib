@@ -16,10 +16,12 @@ TEMPLATE = app
 
 SOURCES += \
     ModelTest.cpp \
-    Main.cpp
+    Main.cpp \
+    QTxToolboxLibTests.cpp
 
 HEADERS += \
-    ModelTest.h
+    ModelTest.h \
+    QTxToolboxLibTests.h
 
 INCLUDEPATH += $$PWD/../QtxToolboxLib
 

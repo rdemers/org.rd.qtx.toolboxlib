@@ -26,9 +26,10 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
+
 extern "C"
 {
-    #include "DecNumber/decContext.h"
+    #include "internal/DecNumber/decContext.h"
 }
 #include "QDecFwd.h"
 
